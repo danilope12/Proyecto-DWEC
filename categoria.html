@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edad = prompt("Escribe tu edad");
+        let categoria;
+        if(edad>=5 && edad<=8){
+            categoria = "Prebenjamín";
+        }else if(edad>=9 && edad<=10){
+            categoria = "Benjamín";
+        }else if(edad>=11 && edad<=12){
+            categoria = "Alevín";
+        }else if(edad>=13 && edad<=14){
+            categoria = "Infantil";
+        }else if(edad>=15 && edad<=16){
+            categoria = "Cadete";
+        }else if(edad>=17 && edad<=19){
+            categoria = "Juvenil";
+        }
+        document.body.innerHTML = categoria;
+    </script>
+</body>
+</html>

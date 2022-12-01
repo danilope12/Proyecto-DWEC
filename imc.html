@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let altura;
+        let peso;
+        do{
+        altura = prompt("Escribe tu altura en cm");
+        peso = prompt("Escribe tu peso en kg");
+        }while(altura<=0 || peso<=0);
+        let imc = peso / Math.pow((altura/100), 2);
+        document.body.innerHTML = imc.toFixed(2) + "<br>";
+        let clasificacion;
+        if(imc<16.00){
+            clasificacion = "Infrapeso (delgadez severa)";
+        }else if(imc>=16.00 && imc<17.00){
+            clasificacion = "Infrapeso (delgadez moderada)"; 
+        }else if(imc>=17.00 && imc<18.50){
+            clasificacion = "Infrapeso (delgadez aceptable)";
+        }else if(imc>=18.50 && imc<25.00){
+            clasificacion = "Peso normal";
+        }else if(imc>=25.00 && imc<30.00){
+            clasificacion = "Sobrepeso";
+        }else if(imc>=30.00 && imc<35.00){
+            clasificacion = "Obeso (Tipo I)";
+        }else if(imc>=35.00 && imc<40.00){
+            clasificacion = "Obeso (Tipo II)"
+        }else if(imc>40.00){
+            clasificacion = "(Tipo III)";
+        }
+        document.body.innerHTML += clasificacion;
+    </script>
+</body>
+</html>
