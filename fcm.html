@@ -13,9 +13,18 @@
         do{
         edad = prompt("Escribe tu edad");
         sexo = prompt("Escribe tu sexo (1-masc 2-fem)");
-        }while(edad<0 || (sexo!=1 || sexo!=2));
+        }while(edad<0 | (sexo == (1 | 2)));
         let fcm = 220 - edad;
-        document.body.innerHTML = fcm;
+        let ses = fcm*0.6;
+        let set = fcm*0.7;
+        let och =fcm*0.8;
+        let nov = fcm*0.9;
+        document.body.innerHTML = "Frecuencia Cardíaca Máxima: " + fcm + "<br>";
+        document.body.innerHTML += "Zona de recuperación: (" + ses.toFixed(2) + "-" + set.toFixed(2) + ")<br>";
+        document.body.innerHTML += "Zona de aeróbica: (" + set.toFixed(2) + "-" + och.toFixed(2) + ")<br>";
+        document.body.innerHTML += "Zona de anaeróbica: (" + och.toFixed(2) + "-" + nov.toFixed(2) + ")<br>";
+        document.body.innerHTML += "Línea roja: (" + nov.toFixed(2) + "-" + fcm.toFixed(2) + ")<br>";
+
     </script>
 </body>
 </html>

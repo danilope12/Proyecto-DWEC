@@ -8,20 +8,50 @@
 </head>
 <body>
     <script>
-        let edad = prompt("Escribe tu edad");
-        let categoria;
+        let año = prompt("Escribe tu año de nacimiento");
+        let edad = 2022 - año;
         if(edad>=5 && edad<=8){
-            categoria = "Prebenjamín";
+            document.body.innerHTML += "<b>Prebenjamín</b><br>";
+            document.body.innerHTML += "Benjamín<br>";
+            document.body.innerHTML += "Alevín<br>";
+            document.body.innerHTML += "Infantil<br>";
+            document.body.innerHTML += "Cadete<br>";
+            document.body.innerHTML += "Juvenil<br>";
         }else if(edad>=9 && edad<=10){
-            categoria = "Benjamín";
+            document.body.innerHTML += "Prebenjamín<br>";
+            document.body.innerHTML += "<b>Benjamín</b><br>";
+            document.body.innerHTML += "Alevín<br>";
+            document.body.innerHTML += "Infantil<br>";
+            document.body.innerHTML += "Cadete<br>";
+            document.body.innerHTML += "Juvenil<br>";
         }else if(edad>=11 && edad<=12){
-            categoria = "Alevín";
+            document.body.innerHTML += "Prebenjamín<br>";
+            document.body.innerHTML += "Benjamín<br>";
+            document.body.innerHTML += "<b>Alevín</b><br>";
+            document.body.innerHTML += "Infantil<br>";
+            document.body.innerHTML += "Cadete<br>";
+            document.body.innerHTML += "Juvenil<br>";
         }else if(edad>=13 && edad<=14){
-            categoria = "Infantil";
+            document.body.innerHTML += "Prebenjamín<br>";
+            document.body.innerHTML += "Benjamín<br>";
+            document.body.innerHTML += "Alevín<br>";
+            document.body.innerHTML += "<b>Infantil</b><br>";
+            document.body.innerHTML += "Cadete<br>";
+            document.body.innerHTML += "Juvenil<br>";
         }else if(edad>=15 && edad<=16){
-            categoria = "Cadete";
+            document.body.innerHTML += "Prebenjamín<br>";
+            document.body.innerHTML += "Benjamín<br>";
+            document.body.innerHTML += "Alevín<br>";
+            document.body.innerHTML += "Infantil<br>";
+            document.body.innerHTML += "<b>Cadete</b><br>";
+            document.body.innerHTML += "Juvenil<br>";
         }else if(edad>=17 && edad<=19){
-            categoria = "Juvenil";
+            document.body.innerHTML += "Prebenjamín<br>";
+            document.body.innerHTML += "Benjamín<br>";
+            document.body.innerHTML += "Alevín<br>";
+            document.body.innerHTML += "Infantil<br>";
+            document.body.innerHTML += "Cadete<br>";
+            document.body.innerHTML += "<b>Juvenil</b><br>";
         }
         document.body.innerHTML = categoria;
     </script>
